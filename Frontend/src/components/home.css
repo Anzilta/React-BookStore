@@ -1,0 +1,56 @@
+.homepage{
+    background-color:black;
+    color:white;
+    width: 100%;
+   min-height: 91.5vh;
+   max-height: auto;
+
+}
+.row{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: start;
+    color: white;
+   margin-left: -300px;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 50%;
+
+}
+.text h2{
+    font-size: 100px;
+    
+}
+.text p{
+    margin-top: 70px;
+    font-size: large;
+    color: silver;
+}
+.text Button{
+    outline:none;
+    border:1px solid white;
+    background-color: transparent;
+    color: white;
+    padding: 5px 20px 5px 20px;
+
+}
+
+.textp img{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 550px;
+    height: 500px;
+    margin-top: 50px;
+    margin-right: 150px;
+}
+    
+
+ 
+ 

@@ -1,0 +1,28 @@
+.textfield {
+    background-color: white;
+    color: black;
+    width: 500px;
+
+}
+.main button{
+    outline:none;
+    border:1px solid white;
+    background-color: transparent;
+    color: white;
+    padding: 5px 20px 5px 20px;
+    margin-top: 20px;
+
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+    margin-top: 50px;
+
+    padding: 50px;
+    
+
+}
+
+    
