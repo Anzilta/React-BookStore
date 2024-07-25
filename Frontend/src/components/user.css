@@ -1,0 +1,37 @@
+.about{
+  height: 700px;
+background: linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)
+}
+.card-user{
+  padding: 10px 10px 10px 10px;
+    margin: 5px;
+    width: 300px;
+    height: 450px;
+    border-radius:  1rem;
+    box-shadow: 0px 10px 8px #999;
+    background: linear-gradient(45deg, #eeb8c4 30%, #eca883 90%);
+    color:black;
+}
+ .totalbody{
+   padding: 10px 10px 10px 10px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+   }
+  .para p{
+    font-size: 28px;
+   }
+   .switch{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   } 
+   .details{
+    margin-left: 30px;
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    grid-auto-rows: auto;
+    grid-gap:1rem ;
+   }

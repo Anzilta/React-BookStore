@@ -1,4 +1,4 @@
-.addbutton{
+.up-button{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -7,14 +7,14 @@
     border:1px solid white;
     
     padding: 5px 20px 5px 20px;
-    background-color: rgb(234, 187, 127);
+    background-color: rgb(190, 227, 248);
    
 
 }
     .up-contain{
         display: flex;
         align-items: center;
-       color: #000000;
+       color: #ffffff;
         justify-content: center;
         background-repeat: no-repeat;
         background-image: url("https://img.freepik.com/premium-photo/stack-four-books-wooden-table-against-background-chalk-board_582451-11.jpg?ga=GA1.1.1776648423.1721533730&semt=ais_user");    background-size: cover;

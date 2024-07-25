@@ -1,46 +1,5 @@
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-.container{
-    margin: 0;
+.signup Link{
   display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url('/back.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-   height: 730px;
- 
-
+  justify-items: end;
+  align-items: end;
 }
-.container h2{
-  color:black;
-}
-.login-form {
-  width: 500px; /* Adjust width as needed */
-  padding: 20px;
-  height: 300px;
-  border: 2px solid rgba(255, 255, 255,.2) ;
-  box-shadow: 0 0 10px rgba(255, 255, 255,.2);
-  backdrop-filter: blur(10px);
-  background-color:transparent;
-  border-radius: 15px;
- 
-}
-
-
-  
-.pass{
-  margin-top: 20px;
-    margin-bottom: 20px;
-}
-.button{
-
-border: 0px;
-}
-

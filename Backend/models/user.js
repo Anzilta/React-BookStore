@@ -25,6 +25,10 @@ const schema=mongoose.Schema({
     passWord:{
        type:String,
         required:true
+    },
+    education:{
+        type:String,
+        required:true
     }
 
 

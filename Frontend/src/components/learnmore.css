@@ -1,0 +1,45 @@
+.Topic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .Topic-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .Topic-container:hover {
+    transform: scale(1.05);
+  }
+  
+  .Topic-img img {
+    width: 100%;
+    border-radius: 10px;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .Topic-body {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .Topic-body h2 {
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .Topic-body b {
+    color: #e40909;
+  }
+  

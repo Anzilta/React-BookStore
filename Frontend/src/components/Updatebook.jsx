@@ -1,12 +1,13 @@
 import { Button, TextField } from '@mui/material'
-import React, { useState } from 'react'
-import './addbook.css'
+import React, { useEffect, useState } from 'react'
+import './updatebook.css'
 import axios from "axios"
-import { useNavigate } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 
 
-const Addbook = () => {
-  const navigate=useNavigate()
+const Updatebook= () => {
+const navigate = useNavigate();
+const location = useLocation()
   const [Data,setData]=useState({
     Bookname:"",
     Description:"",
@@ -20,13 +21,13 @@ const Addbook = () => {
     console.log(Data)
 
   }
-  const post = (event) => {
+  const Update = (event) => {
     event.preventDefault();
     // post data to DB
-    axios.post("http://127.0.0.1:1000/add",Data)
+    axios.put(`http://127.0.0.1:1000/updatebook/${Data._id}`,Data)
     .then(()=>{
         console.log('Form submitted:',Data)
-        navigate("/Adminbook")
+        navigate('/Adminbook')
     })
     .catch((error)=>{
         console.log(error)
@@ -34,8 +35,18 @@ const Addbook = () => {
     // Here you would typically send the form data to your backend
 
   };
+
+  useEffect(() =>{
+    if(location.state.post){
+        console.log("first", location.state.post)
+        setData(location.state.post)
+    }
+    else{
+        console.log("no daata")
+    }
+  },[location.state])
   return (
-    <div className='.library-background'>
+    <div>
       <div className='main'>
         <div className='container' >
           <TextField  className='textfield'label="Bookname"  onChange={change} name= "Bookname" value={Data.Bookname} variant="filled" /> 
@@ -51,12 +62,15 @@ const Addbook = () => {
          <br/>
          <br/>
           <TextField  className='textfield'label="Price"  onChange={change} name= "Price" value={Data.Price}   variant="filled" /> 
+          <br/>
+          <br/>
+         
         
-      <Button  onClick={post}>ADD</Button>
+      <Button  onClick={Update}>Update</Button>
       </div>
       </div>
    </div>
   )
 }
 
-export default Addbook
+export default Updatebook

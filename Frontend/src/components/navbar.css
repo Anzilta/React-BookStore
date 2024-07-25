@@ -1,7 +1,5 @@
-body{
-background-color:black;
-color:white;
-}
+
+
 .appbar{
     background-color: black;
     border-bottom: 1px solid white;
@@ -10,5 +8,4 @@ color:white;
     display: flex;
     justify-content:flex-end;
     align-items: center;
-    flex: content;
-}
+    flex: content;}
